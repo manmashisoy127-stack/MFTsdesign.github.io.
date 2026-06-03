@@ -56,5 +56,27 @@ nav a {
     font-weight: bold;
     text-transform: uppercase;
 }
+nav a {
+    font-family: 'Arial Black', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 
+        0 1px 0 #ccc,
+        0 2px 0 #c5c5c5,
+        0 3px 0 #bbb,
+        0 4px 0 #b5b5b5,
+        0 5px 0 #aaa,
+        0 6px 1px rgba(0,0,0,.1),
+        0 0 5px rgba(0,0,0,.1),
+        0 1px 3px rgba(0,0,0,.3),
+        0 3px 5px rgba(0,0,0,.2),
+        0 5px 10px rgba(0,0,0,.25);
+    transition: 0.2s ease;
+}
 
+/* Makes it press down like a real 3D button when you tap it! */
+nav a:active {
+    text-shadow: 0 1px 0 #ccc;
+    transform: translateY(4px);
+    }
 
