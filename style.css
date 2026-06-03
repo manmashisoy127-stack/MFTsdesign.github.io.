@@ -37,3 +37,6 @@ hr {
     background: #21262d;
     margin: 20px 0;
   }
+body {
+    font-size: max(16px, 4vw);
+}
