@@ -1,0 +1,39 @@
+/* This applies to the whole website background and text */
+body {
+    background-color: #0d1117; /* Dark futuristic background */
+    color: #c9d1d9; /* Light text color */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* This styles your headers */
+h1, h2 {
+    color: #58a6ff; /* Neon tech blue */
+}
+
+/* This styles your navigation links */
+a {
+    color: #58a6ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* This makes links glow slightly when you hover over them */
+a:hover {
+    color: #1f6feb;
+    text-decoration: underline;
+}
+
+/* This changes the active page text color */
+b {
+    color: #ff7b72; /* Subtle coral accent for the current page */
+}
+
+/* This styles the dividing line */
+hr {
+    border: 0;
+    height: 1px;
+    background: #21262d;
+    margin: 20px 0;
+  }
