@@ -40,3 +40,14 @@ hr {
 body {
     font-size: max(16px, 4vw);
 }
+nav {
+    text-align: center;
+    margin: 20px 0;
+}
+
+nav a {
+    font-size: max(18px, 4.5vw);
+    margin: 0 15px;
+    text-decoration: none;
+    display: inline-block;
+}
