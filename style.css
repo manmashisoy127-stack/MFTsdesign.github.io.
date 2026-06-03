@@ -52,6 +52,9 @@ nav a {
     display: inline-block;
 }
 nav a {
-    font-family: 'Algerian', 'Impact', sans-serif;
+    font-family: 'Cinzel Decorative', serif;
+    font-weight: bold;
     text-transform: uppercase;
 }
+
+
