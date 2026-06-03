@@ -51,3 +51,7 @@ nav a {
     text-decoration: none;
     display: inline-block;
 }
+nav a {
+    font-family: 'Algerian', 'Impact', sans-serif;
+    text-transform: uppercase;
+}
