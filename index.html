@@ -9,9 +9,24 @@
     <p>
         <b>Home</b> | 
         <nav style="text-align: center; margin: 25px 0;">
-    <a href="index.html" style="font-size: max(18px, 4.5vw); margin: 0 15px; text-decoration: none; font-weight: bold;">Home</a>
-    <a href="contact.html" style="font-size: max(18px, 4.5vw); margin: 0 15px; text-decoration: none; font-weight: bold;">Contact</a>
-</nav>
+    <style>
+        .my-nav-link {
+            font-size: max(20px, 5vw); /* Bigger and responsive */
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: sans-serif;
+            color: #007bff; /* Starts as blue */
+            display: inline-block;
+        }
+        .my-nav-link:active {
+            color: #ffffff !important; /* Turns white when clicked */
+        }
+    </style>
+    <a href="index.html" class="my-nav-link">Home</a>
+    <a href="about.html" class="my-nav-link">About</a>
+    <a href="contact.html" class="my-nav-link">Contact</a>
+        </nav>
     </p>
     <hr>
     <h1>MFTs – Manmashi's Futuristic Tech Sketches</h1>
