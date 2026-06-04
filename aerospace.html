@@ -7,11 +7,22 @@
 </head>
 <body>
 
-    <div style="background-color: #f4f0ea; padding: 20px 0; text-align: center; margin-bottom: 20px; position: relative;">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<div style="background-color: #f4f0ea; padding: 25px 0; text-align: center; margin-bottom: 20px; position: relative;">
     <style>
-        .my-nav-link { font-size: max(20px, 5vw); margin: 0 10px; text-decoration: none; font-weight: bold; font-family: sans-serif; color: #007bff; display: inline-block; vertical-align: middle; }
+        .my-nav-link { 
+            font-size: 22px; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold; 
+            font-family: sans-serif; 
+            color: #007bff; 
+            display: inline-block; 
+            vertical-align: middle; 
+        }
         
-        /* LOCKS DOTS TO THE RIGHT CORNER */
+        /* THE CORNER DROP BUTTON CONTAINER */
         .dropdown { 
             position: absolute; 
             right: 15px; 
@@ -20,48 +31,49 @@
             display: inline-block;
         }
         
-        /* GIANT, EASY TO SEE THREE DOTS */
+        /* MASSIVE THREE DOTS CLICK LAYER */
         .dropbtn { 
-            font-size: 35px; 
-            font-weight: 900;
+            font-size: 38px; 
+            font-weight: bold;
             background: none; 
             border: none; 
             color: #007bff; 
             cursor: pointer; 
-            padding: 5px 15px;
+            padding: 10px 20px; 
             line-height: 1;
         }
         
-        /* HUGE POPUP BOX FOR MOBILE */
+        /* ENLARGED WHITE POPUP BOX WINDOW */
         .dropdown-content { 
             display: none; 
             position: absolute; 
             right: 0; 
             background-color: #ffffff; 
-            min-width: 260px; 
-            box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
-            z-index: 1000; 
-            border-radius: 12px; 
+            width: 70vw; /* Takes up 70% of the mobile screen width */
+            max-width: 300px;
+            box-shadow: 0px 12px 28px rgba(0,0,0,0.4); 
+            z-index: 99999; 
+            border-radius: 14px; 
             text-align: left; 
-            margin-top: 10px; 
-            padding: 8px 0;
+            margin-top: 12px; 
+            padding: 10px 0;
         }
         
-        /* MASSIVE LINKS INSIDE POPUP */
+        /* MASSIVE, TAPPABLE SYSTEM LINKS */
         .dropdown-content a { 
             color: #333333; 
-            padding: 18px 24px; 
+            padding: 22px 24px; /* Huge touch area for thumbs */
             text-decoration: none; 
             display: block; 
             font-family: sans-serif; 
             font-weight: bold; 
-            font-size: 22px; 
-            border-bottom: 1px solid #f0f0f0;
+            font-size: 24px; /* Explicit giant size */
+            border-bottom: 1px solid #eeeeee;
         }
         .dropdown-content a:last-child { border-bottom: none; }
         .dropdown-content a:active { background-color: #f4f0ea; color: #007bff; }
         
-        /* Keeps menu open comfortably */
+        /* Keeps drop visible on click or focus actions */
         .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content { display: block; }
     </style>
     
@@ -79,7 +91,6 @@
         </div>
     </div>
 </div>
-
     <hr>
     <h1 style="color: #007bff; font-family: sans-serif; text-align: center;">🚀 Aerospace Tech</h1>
     <p style="color: white; font-family: sans-serif; text-align: center;">Rockets, fighter jets, and spacecraft designs.</p>
