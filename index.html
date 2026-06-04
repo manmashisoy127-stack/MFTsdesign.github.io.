@@ -6,24 +6,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <div style="background-color: #f4f0ea; padding: 20px 0; text-align: center; margin-bottom: 20px;">
+     <div style="background-color: #f4f0ea; padding: 20px 0; text-align: center; margin-bottom: 20px; position: relative;">
     <style>
-        .my-nav-link {
-            font-size: max(20px, 5vw);
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            font-family: sans-serif;
-            color: #007bff;
-            display: inline-block;
-        }
-        .my-nav-link:active {
-            color: #000000 !important;
-        }
+        .my-nav-link { font-size: max(20px, 5vw); margin: 0 12px; text-decoration: none; font-weight: bold; font-family: sans-serif; color: #007bff; display: inline-block; vertical-align: middle; }
+        .dropdown { display: inline-block; position: relative; vertical-align: middle; }
+        .dropbtn { font-size: max(22px, 5.5vw); background: none; border: none; color: #007bff; cursor: pointer; font-weight: bold; padding: 0 10px; vertical-align: middle; }
+        .dropdown-content { display: none; position: absolute; right: 0; background-color: #ffffff; min-width: 200px; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); z-index: 100; border-radius: 8px; text-align: left; margin-top: 5px; }
+        .dropdown-content a { color: #333333; padding: 12px 16px; text-decoration: none; display: block; font-family: sans-serif; font-weight: bold; font-size: 16px; }
+        .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content { display: block; }
     </style>
+    
     <a href="index.html" class="my-nav-link">Home</a>
     <a href="about.html" class="my-nav-link">About</a>
     <a href="contact.html" class="my-nav-link">Contact</a>
+
+    <!-- The Three Dots (Only on Home Page) -->
+    <div class="dropdown">
+        <button class="dropbtn">&#8942;</button>
+        <div class="dropdown-content">
+            <a href="aerospace.html">🚀 Aerospace</a>
+            <a href="robotics.html">🤖 Robotics</a>
+            <a href="vehicles.html">🏎️ Futuristic Vehicles</a>
+            <a href="aquatech.html">🌊 Aquatech</a>
+        </div>
+    </div>
 </div>
     </p>
     <hr>
