@@ -7,32 +7,78 @@
 </head>
 <body>
 
-    <!-- Top Bar with Corner Three-Dot Menu -->
     <div style="background-color: #f4f0ea; padding: 20px 0; text-align: center; margin-bottom: 20px; position: relative;">
-        <style>
-            .my-nav-link { font-size: max(20px, 5vw); margin: 0 12px; text-decoration: none; font-weight: bold; font-family: sans-serif; color: #007bff; display: inline-block; vertical-align: middle; }
-            .dropdown { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); display: inline-block; }
-            .dropbtn { font-size: 32px; background: none; border: none; color: #007bff; cursor: pointer; font-weight: bold; padding: 10px 15px; }
-            .dropdown-content { display: none; position: absolute; right: 0; background-color: #ffffff; min-width: 250px; box-shadow: 0px 8px 24px rgba(0,0,0,0.3); z-index: 100; border-radius: 12px; text-align: left; margin-top: 5px; padding: 6px 0; }
-            .dropdown-content a { color: #333333; padding: 16px 20px; text-decoration: none; display: block; font-family: sans-serif; font-weight: bold; font-size: 20px; }
-            .dropdown-content a:active { background-color: #f4f0ea; color: #007bff; }
-            .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content { display: block; }
-        </style>
+    <style>
+        .my-nav-link { font-size: max(20px, 5vw); margin: 0 10px; text-decoration: none; font-weight: bold; font-family: sans-serif; color: #007bff; display: inline-block; vertical-align: middle; }
         
-        <a href="index.html" class="my-nav-link">Home</a>
-        <a href="about.html" class="my-nav-link">About</a>
-        <a href="contact.html" class="my-nav-link">Contact</a>
+        /* LOCKS DOTS TO THE RIGHT CORNER */
+        .dropdown { 
+            position: absolute; 
+            right: 15px; 
+            top: 50%;
+            transform: translateY(-50%);
+            display: inline-block;
+        }
+        
+        /* GIANT, EASY TO SEE THREE DOTS */
+        .dropbtn { 
+            font-size: 35px; 
+            font-weight: 900;
+            background: none; 
+            border: none; 
+            color: #007bff; 
+            cursor: pointer; 
+            padding: 5px 15px;
+            line-height: 1;
+        }
+        
+        /* HUGE POPUP BOX FOR MOBILE */
+        .dropdown-content { 
+            display: none; 
+            position: absolute; 
+            right: 0; 
+            background-color: #ffffff; 
+            min-width: 260px; 
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.3); 
+            z-index: 1000; 
+            border-radius: 12px; 
+            text-align: left; 
+            margin-top: 10px; 
+            padding: 8px 0;
+        }
+        
+        /* MASSIVE LINKS INSIDE POPUP */
+        .dropdown-content a { 
+            color: #333333; 
+            padding: 18px 24px; 
+            text-decoration: none; 
+            display: block; 
+            font-family: sans-serif; 
+            font-weight: bold; 
+            font-size: 22px; 
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .dropdown-content a:last-child { border-bottom: none; }
+        .dropdown-content a:active { background-color: #f4f0ea; color: #007bff; }
+        
+        /* Keeps menu open comfortably */
+        .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content { display: block; }
+    </style>
+    
+    <a href="index.html" class="my-nav-link">Home</a>
+    <a href="about.html" class="my-nav-link">About</a>
+    <a href="contact.html" class="my-nav-link">Contact</a>
 
-        <div class="dropdown">
-            <button class="dropbtn">&#8942;</button>
-            <div class="dropdown-content">
-                <a href="aerospace.html">🚀 Aerospace</a>
-                <a href="robotics.html">🤖 Robotics</a>
-                <a href="vehicles.html">🏎️ Vehicles</a>
-                <a href="aquatech.html">🌊 Aquatech</a>
-            </div>
+    <div class="dropdown">
+        <button class="dropbtn">&#8942;</button>
+        <div class="dropdown-content">
+            <a href="aerospace.html">🚀 Aerospace</a>
+            <a href="robotics.html">🤖 Robotics</a>
+            <a href="vehicles.html">🏎️ Vehicles</a>
+            <a href="aquatech.html">🌊 Aquatech</a>
         </div>
     </div>
+</div>
 
     <hr>
     <h1 style="color: #007bff; font-family: sans-serif; text-align: center;">🌊 Aquatech Designs</h1>
