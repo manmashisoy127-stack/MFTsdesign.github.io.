@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,15 +7,31 @@
 </head>
 <body>
 
-    <!-- Browny-white Menu Bar -->
-    <div style="background-color: #f4f0ea; padding: 20px 0; text-align: center; margin-bottom: 20px;">
+    <!-- Top Bar with Corner Three-Dot Menu -->
+    <div style="background-color: #f4f0ea; padding: 20px 0; text-align: center; margin-bottom: 20px; position: relative;">
         <style>
-            .my-nav-link { font-size: max(20px, 5vw); margin: 0 12px; text-decoration: none; font-weight: bold; font-family: sans-serif; color: #007bff; display: inline-block; }
-            .my-nav-link:active { color: #000000 !important; }
+            .my-nav-link { font-size: max(20px, 5vw); margin: 0 12px; text-decoration: none; font-weight: bold; font-family: sans-serif; color: #007bff; display: inline-block; vertical-align: middle; }
+            .dropdown { position: absolute; right: 15px; top: 50%; transform: translateY(-50%); display: inline-block; }
+            .dropbtn { font-size: 32px; background: none; border: none; color: #007bff; cursor: pointer; font-weight: bold; padding: 10px 15px; }
+            .dropdown-content { display: none; position: absolute; right: 0; background-color: #ffffff; min-width: 250px; box-shadow: 0px 8px 24px rgba(0,0,0,0.3); z-index: 100; border-radius: 12px; text-align: left; margin-top: 5px; padding: 6px 0; }
+            .dropdown-content a { color: #333333; padding: 16px 20px; text-decoration: none; display: block; font-family: sans-serif; font-weight: bold; font-size: 20px; }
+            .dropdown-content a:active { background-color: #f4f0ea; color: #007bff; }
+            .dropdown:hover .dropdown-content, .dropdown:focus-within .dropdown-content { display: block; }
         </style>
+        
         <a href="index.html" class="my-nav-link">Home</a>
         <a href="about.html" class="my-nav-link">About</a>
         <a href="contact.html" class="my-nav-link">Contact</a>
+
+        <div class="dropdown">
+            <button class="dropbtn">&#8942;</button>
+            <div class="dropdown-content">
+                <a href="aerospace.html">🚀 Aerospace</a>
+                <a href="robotics.html">🤖 Robotics</a>
+                <a href="vehicles.html">🏎️ Vehicles</a>
+                <a href="aquatech.html">🌊 Aquatech</a>
+            </div>
+        </div>
     </div>
 
     <hr>
@@ -25,3 +42,4 @@
 
 </body>
 </html>
+   
